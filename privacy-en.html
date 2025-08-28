@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Privacy Policy – Neurospicy Reminder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy – Neurospicy Reminder Google Workspace Add-on.">
+  <link rel="icon" href="data:,">
+  <style>
+    :root{--fg:#1f2328;--muted:#667085;--bg:#fafafa;--card:#fff;--br:#e5e7eb;--link:#0b57d0}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:820px;margin:40px auto;padding:0 16px}
+    h1{margin:0 0 6px;font-size:28px} h2{margin:18px 0 6px;font-size:20px}
+    p{margin:8px 0} ul{margin:6px 0 6px 20px}
+    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+    .card{background:var(--card);border:1px solid var(--br);border-radius:14px;padding:22px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+    footer{margin:24px 0;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Privacy Policy – Neurospicy Reminder</h1>
+    <p><em>Last updated: 17-08-2025</em></p>
+
+    <section class="card">
+      <h2>1. Who we are</h2>
+      <p><strong>Controller:</strong> Neurospicy Parents<br>
+         <strong>Contact:</strong> <a href="mailto:neurospicyparents@gmail.com">neurospicyparents@gmail.com</a></p>
+
+      <h2>2. What the add-on does</h2>
+      <p>The add-on creates a weekly (or multiple times per week) agenda digest and emails it to the
+         recipient(s) you specify. You can optionally include lists from specific tabs in a Google Sheet
+         (e.g., <em>Boodschappen</em> and <em>Klusjes</em>).</p>
+
+      <h2>3. What data we process</h2>
+      <p>We limit processing to what is strictly necessary for the service to work.</p>
+      <p><em>Settings we store (in Google Apps Script ScriptProperties):</em></p>
+      <ul>
+        <li>Your email address and optional additional recipients</li>
+        <li>Selected calendar IDs (not the contents of events)</li>
+        <li>Day(s) and time when you want to receive the digest</li>
+        <li>Options: whether to include <em>Boodschappen</em> and/or <em>Klusjes</em></li>
+        <li>(Optional) <code>sheetId</code> of the spreadsheet that holds your lists</li>
+        <li>Created trigger IDs (only to remove them cleanly later)</li>
+      </ul>
+      <p><em>Data we only read and do not store:</em></p>
+      <ul>
+        <li>Calendar events from the calendars you selected for the upcoming week (title and times),
+            and “special occasions” up to 3 weeks ahead; used to generate the email.</li>
+        <li>List items from the specified tabs (column A: text, column B: checkbox) to include them in the email.</li>
+      </ul>
+      <p><em>Email content:</em></p>
+      <ul>
+        <li>The email is generated at send time. We do not store the email text outside your mailbox.</li>
+      </ul>
+
+      <h2>4. Purposes and legal basis (GDPR)</h2>
+      <ul>
+        <li><strong>Purpose:</strong> provide the service you requested: a weekly agenda digest email,
+            optionally enriched with list items.</li>
+        <li><strong>Legal basis:</strong> performance of a contract (Art. 6(1)(b) GDPR) — you opt in by subscribing yourself.
+            For the optional lists feature, your consent applies (Art. 6(1)(a) GDPR), which you can withdraw by
+            disabling the option or unsubscribing.</li>
+      </ul>
+
+      <h2>5. Retention</h2>
+      <ul>
+        <li>Settings (emails, calendar IDs, day/hour, options, sheetId, trigger IDs): kept until you unsubscribe
+            or ask us to delete.</li>
+        <li>Event data and list content: not stored outside the email you receive.</li>
+      </ul>
+
+      <h2>6. Sharing with third parties</h2>
+      <ul>
+        <li>We do not sell data and do not share it for marketing.</li>
+        <li>The add-on runs on Google infrastructure (Apps Script). Emails are sent via Google (MailApp or Gmail).
+            No data is sent to our own external servers.</li>
+      </ul>
+
+      <h2>7. Security</h2>
+      <ul>
+        <li>Minimal OAuth scopes and limited storage (settings only in ScriptProperties).</li>
+        <li>Google provides authentication and account security (OAuth 2.0).</li>
+        <li>Access is per user; triggers and settings are user-specific.</li>
+      </ul>
+
+      <h2>8. Your rights</h2>
+      <p>You may have the right to access, rectify, erase, restrict, port, and object (as applicable).
+         Contact us at <a href="mailto:neurospicyparents@gmail.com">neurospicyparents@gmail.com</a>.</p>
+
+      <h2>9. Deleting your data (unsubscribe)</h2>
+      <p>Use the “Unsubscribe” card in the add-on. We then delete your settings (ScriptProperties) and the related time triggers.</p>
+
+      <h2>10. Children</h2>
+      <p>The service is not directed to children under 16. If you are a parent/guardian and believe data was provided without consent,
+         contact us so we can remove it.</p>
+
+      <h2>11. Changes</h2>
+      <p>We may update this notice. The last update date is shown at the top. For material changes, we will inform you in the add-on or by email.</p>
+
+      <h2>12. Google API Services User Data Policy (Limited Use)</h2>
+      <p>If the add-on uses the Gmail scope <code>gmail.send</code>, we comply with the Google API Services User Data Policy (Limited Use):</p>
+      <ul>
+        <li>Functional use only (sending email on your behalf).</li>
+        <li>No human access to Gmail data, no sharing with third parties, no ads or profiling.</li>
+      </ul>
+
+      <h2>13. Contact</h2>
+      <p>Questions or requests? Email: <a href="mailto:neurospicyparents@gmail.com">neurospicyparents@gmail.com</a></p>
+    </section>
+
+    <footer>© 2025 Neurospicy Parents</footer>
+  </main>
+</body>
+</html>

@@ -22,7 +22,7 @@
   <main class="wrap">
     <header>
       <h1>Neurospicy Parents</h1>
-      <p>Wij bouwen eenvoudige Google Workspace-add-ons die helpen met plannen en onthouden.</p>
+      <p>We builds simple Google Workspace-add-ons to help us plan and remember</p>
       <nav>
         <a href="./privacy.html">Privacyverklaring</a>
         <a href="./tos.html">Terms of Service</a>
@@ -31,23 +31,40 @@
     </header>
 
     <section class="card">
-      <h2>Over ons</h2>
-      <p>Neurospicy Parents ontwikkelt tools voor Google Sheets/Calendar om wekelijkse agenda-overzichten te mailen,
-        met optionele boodschappen- en klusjeslijsten. Onze add-on: <strong>Neurospicy Agenda Reminder</strong>.</p>
+      <h2>Neurospicy Agenda Reminder — What it does</h2>
+      <p>
+        A Google Workspace Add-on (for Google Sheets & Calendar) that emails you a weekly agenda digest. 
+        You choose which calendars to include, on which day(s) and time to send, and you can optionally attach 
+        two list tabs from a Sheet (<em>Boodschappen</em> and <em>Klusjes</em>).
+      </p>
 
-      <h2>Waar helpt het bij?</h2>
+      <h3>How it works</h3>
+      <ol>
+        <li>Install the add-on in Google Sheets and open the sidebar.</li>
+        <li>Select your calendars, pick day(s) and time (e.g., Mon & Fri at 08:00).</li>
+        <li>Optionally include the two list tabs from your Sheet.</li>
+        <li>The add-on creates time-based triggers and sends the digest at your chosen times.</li>
+      </ol>
+
+      <h3>Permissions (OAuth scopes) used</h3>
       <ul>
-        <li>Agenda’s naast elkaar bekijken vóór de week start</li>
-        <li>Verjaardagen/cadeaus niet vergeten</li>
-        <li>Boodschappen bijhouden</li>
-        <li>Klusjes gestaag afronden</li>
-        <li>Meer rust en overzicht</li>
+        <li><code>calendar.readonly</code> — read events to build the weekly digest.</li>
+        <li><code>spreadsheets.readonly</code> — read the two optional list tabs.</li>
+        <li><code>spreadsheets.currentonly</code> — read spreadsheets only where the add-on is installed.</li>
+        <li><code>script.scriptapp</code> — create and remove time-based triggers you control.</li>
+        <li><code>script.send_mail</code> — send the digest email to your specified recipients.</li>
+        <li><code>userinfo.email</code> — tie settings to your Google account’s primary email.</li>
+        <li><code>script.locale</code> — use your locale for date/time formatting.</li>
       </ul>
 
-      <h2>Contact</h2>
-      <p>E-mail: <a href="mailto:neurospicyparents@gmail.com">neurospicyparents@gmail.com</a></p>
+      <p>
+        Privacy Policy (NL): <a href="/privacy.html">link</a>
+        Privacy Policy (EN): <a href="/privacy_en.html">link</a> · 
+        Terms (NL): <a href="/tos.html">link</a>
+        Terms (EN): <a href="/tos_en.html">link</a> · 
+        Support: <a href="mailto:neurospicyparents@gmail.com">neurospicyparents@gmail.com</a>
+      </p>
     </section>
-
     <footer>© 2025 Neurospicy Parents</footer>
   </main>
 </body>
