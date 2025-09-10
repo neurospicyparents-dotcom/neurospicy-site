@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Neurospicy Parents – Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Neurospicy Parents bouwt eenvoudige Google Workspace-add-ons die helpen met plannen en onthouden.">
+  <meta name="description" content="Neurospicy Parents bouwt eenvoudige Google Workspace™-add-ons die helpen met plannen en onthouden.">
   <link rel="icon" href="data:,">
   <style>
     :root{--fg:#1f2328;--muted:#667085;--bg:#fafafa;--card:#fff;--br:#e5e7eb;--link:#0b57d0}
@@ -22,10 +22,12 @@
   <main class="wrap">
     <header>
       <h1>Neurospicy Parents</h1>
-      <p>We build simple Google Workspace-add-ons to help us plan and remember</p>
+      <p>We build simple Google Workspace™ add-ons to help us plan and remember.</p>
       <nav>
-        <a href="./privacy-en.html">Privacy Statement</a>
-        <a href="./tos-en.html">Terms of Service</a>
+        <a href="./privacy-en.html">Privacy Policy (EN)</a>
+        <a href="./terms-en.html">Terms of Service (EN)</a>
+        <a href="./privacy.html">Privacyverklaring (NL)</a>
+        <a href="./terms.html">Gebruiksvoorwaarden (NL)</a>
         <a href="mailto:neurospicyparents@gmail.com">Contact</a>
       </nav>
     </header>
@@ -33,14 +35,14 @@
     <section class="card">
       <h2>Neurospicy Agenda Reminder — What it does</h2>
       <p>
-        A Google Workspace Add-on (for Google Sheets & Calendar) that emails you a weekly agenda digest. 
-        You choose which calendars to include, on which day(s) and time to send, and you can optionally attach 
-        two list tabs from a Sheet (<em>Boodschappen</em> and <em>Klusjes</em>).
+        A Google Workspace™ add-on (for Google Sheets™ & Google Calendar™) that emails you a weekly agenda digest.
+        You choose which calendars to include, on which day(s) and time to send, and you can optionally attach
+        two list tabs from a Sheet (<em>Boodschappen</em> and <em>Klusjes</em>). Emails are sent via Gmail™.
       </p>
 
       <h3>How it works</h3>
       <ol>
-        <li>Install the add-on in Google Sheets and open the sidebar.</li>
+        <li>Install the add-on in Google Sheets™ and open the sidebar.</li>
         <li>Select your calendars, pick day(s) and time (e.g., Mon & Fri at 08:00).</li>
         <li>Optionally include the two list tabs from your Sheet.</li>
         <li>The add-on creates time-based triggers and sends the digest at your chosen times.</li>
@@ -48,24 +50,25 @@
 
       <h3>Permissions (OAuth scopes) used</h3>
       <ul>
-        <li><code>calendar.readonly</code> — read events to build the weekly digest.</li>
-        <li><code>spreadsheets.readonly</code> — read the two optional list tabs.</li>
-        <li><code>spreadsheets.currentonly</code> — read spreadsheets only where the add-on is installed.</li>
-        <li><code>script.scriptapp</code> — create and remove time-based triggers you control.</li>
-        <li><code>script.send_mail</code> — send the digest email to your specified recipients.</li>
-        <li><code>userinfo.email</code> — tie settings to your Google account’s primary email.</li>
-        <li><code>script.locale</code> — use your locale for date/time formatting.</li>
+        <li><code>https://www.googleapis.com/auth/calendar.readonly</code> — read events to build the weekly digest.</li>
+        <li><code>https://www.googleapis.com/auth/spreadsheets.currentonly</code> — read list tabs in the active spreadsheet only.</li>
+        <li><code>https://www.googleapis.com/auth/script.scriptapp</code> — create/remove time-based triggers.</li>
+        <li><code>https://www.googleapis.com/auth/script.send_mail</code> — send the digest email.</li>
+        <li><code>https://www.googleapis.com/auth/userinfo.email</code> — bind settings to your account’s primary email.</li>
+        <li><code>https://www.googleapis.com/auth/script.locale</code> — use your locale for date/time formatting.</li>
       </ul>
 
       <p>
-        Privacy Policy (NL): <a href="/privacy.html">link</a>
-        Privacy Policy (EN): <a href="/privacy_en.html">link</a> · 
-        Terms (NL): <a href="/tos.html">link</a>
-        Terms (EN): <a href="/tos_en.html">link</a> · 
         Support: <a href="mailto:neurospicyparents@gmail.com">neurospicyparents@gmail.com</a>
       </p>
     </section>
-    <footer>© 2025 Neurospicy Parents</footer>
+
+    <footer>
+      © 2025 Neurospicy Parents<br>
+      <span style="font-size:12px;color:#667085">
+        Google Calendar™, Google Sheets™, Gmail™ and Google Workspace™ are trademarks of Google LLC.
+      </span>
+    </footer>
   </main>
 </body>
 </html>
